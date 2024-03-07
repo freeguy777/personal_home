@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for mode change */
+}
+
+header {
+    background-color: #eee; /* Light mode background color */
+    color: #333; /* Light mode text color */
+    padding: 10px 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar {
+    display :inline-block;
+}
+.navbar .logo {    
+    display: inline-block;
+    border-radius: 15px 3px 3px 3px;
+    border-width: 2px;
+    background-color: rgb(243, 207, 163);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 10px;
+    :hover {text-decoration: underline}
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mode-switch {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333; /* Dark mode background color */
+    color: #eee; /* Dark mode text color */
+}
+
+.dark-mode header {
+    background-color: #555; /* Darker background for header */
+}
+
+/* The rest of your CSS styles for dark mode */
+/* Add more specific selectors for elements you want to style differently in dark mode */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Your responsive CSS rules */
+}
+
+/* ... */
