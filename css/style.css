@@ -1,0 +1,32 @@
+.navi{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.title{
+    display: inline-block;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.title > span{
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: bold;
+    transform: scaleY(3);
+    transform-origin: center;
+    line-height: 3em;
+}
+
+.sub_title > span{
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+/* 모든 div에 대한 상단과 오른쪽 테두리 설정 */
+.contents_matrix > div {
+    border-top: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+/* 4번째부터 7번째 div에 대한 하단 테두리 설정 */
+.contents_matrix > div:nth-child(n+4):nth-child(-n+7) {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}

@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio with Dark Mode</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <header>
-        <div class="navbar">
-            <div class="logo">&nbsp;LF</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="mode-switch" id="modeSwitch">Mode</div>            
-        </div>       
-    </header>
-    <!-- The rest of your HTML content -->
-    <script>
-        // JavaScript for mode switch
-        document.getElementById('modeSwitch').addEventListener('click', function() {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
+<body>      
+  <div class="d-flex flex-column mb-3" style="min-height: 100vh";>
+    <nav class="navbar navbar-expand-lg bg-warning p-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/page/works.html">WORKS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/page/about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/page/thoughts.html">THOUGHTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/page/archive.html">ARCHIVE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true" href="/page/archive.html">Mode</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>  
+    <div class="p-2 flex-grow-1 bg" style = "width:100%; height:100%; background-color:aqua">
+      <div class="p-2">Waste time here</div>
+      <div class="p-2">image</div>
+    </div>
+  </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
